@@ -1,0 +1,149 @@
+/*#05386b синий
+#edf5e1 светлый
+#5cdb95 зеленый осн
+#379683 зеленый др*/
+
+html {
+    background-color: #5cdb95;
+    color: #edf5e1;
+    font-size: 30px;
+}
+
+header {
+    text-align: center;
+    -webkit-text-stroke: 2px #379683;
+    font-size: 220px;
+    color: #edf5e1;
+    font-family: Century;
+    margin-top: 50px;
+}
+
+nav {
+    padding: 0px;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: #5cdb95; 
+    z-index: 10;
+}
+
+nav ul li {
+    display: inline;
+    margin: 40px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #05386b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #edf5e1;
+    border-radius: 15px;
+    color: #379683;
+}
+
+nav ul li a.visited {
+    color: #05386b;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border: 1px solid #379683;
+    background-color: #5cdb95;
+    padding: 4px;
+    border-radius: 18px;
+    z-index: 1;
+    text-align: left;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    color: #05386b;
+    padding: 10px;
+}
+
+.dropdown a:hover {
+    background-color: #edf5e1;
+    color: #379683;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #05386b;
+}
+
+hr {
+    border: 1.5px solid #379683;
+}
+
+.block {
+    background-color: rgba(237, 245, 225, 0.3);
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.image {
+    display: block;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: rgba(92, 219, 149, 0.9);
+    color: #edf5e1;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.icon {
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.6); 
+}
+
+footer {
+    text-align: center;
+    line-height: 50px;
+}
